@@ -1,0 +1,23 @@
+{
+  "name": "map-elections",
+  "version": "1.0.0",
+  "description": "Map of the French elections's vote for abroad electors",
+  "main": "main.js",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-typescript": "^3.1.5",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "^4.3.11",
+    "pump": "^1.0.2",
+    "typescript": "^2.1.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
