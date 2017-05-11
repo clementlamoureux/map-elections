@@ -4,6 +4,9 @@
   "description": "Map of the French elections's vote for abroad electors",
   "main": "main.js",
   "devDependencies": {
+    "@types/node": "^7.0.18",
+    "@types/sinon": "^2.2.1",
+    "ava": "^0.19.1",
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.3",
@@ -13,10 +16,12 @@
     "gulp-uglify": "^2.0.1",
     "gulp-watch": "^4.3.11",
     "pump": "^1.0.2",
-    "typescript": "^2.1.6"
+    "sinon": "^2.2.0",
+    "typescript": "^2.3.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc -v && tsc test/unit-test.ts --target es5 --experimentalDecorators && ava test/unit-test.js",
+    "start": "gulp serve"
   },
   "author": "",
   "license": "ISC"

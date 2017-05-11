@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
+    "module": "commonjs",
     "target": "es5",
-    "out": "kljs.js",
-    "watch": true
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "lib": [
+      "es2015"
+    ]
   }
 }
