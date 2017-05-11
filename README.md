@@ -6,6 +6,7 @@ It was mainly a TypeScript training for me.
 
 ![Screen](assets/screenshot.png)
 
+
 ## Tech specification
 - Typescript 2.1.6
 - Sass 
