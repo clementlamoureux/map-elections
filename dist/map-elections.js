@@ -121,7 +121,7 @@ var MapElections;
             }
             setTimeout(function () { return document.getElementById('panel').className += "opened"; }, 300);
             me.opened = true;
-            this.setContent(me.getTemplate(data));
+            InfoWindow.setContent(me.getTemplate(data));
         };
         InfoWindow.prototype.getTemplate = function (data) {
             var html = "<span class=\"panel-content\"><span class=\"panel-header\">" + data.city + ", " + data.country + "</span><span class=\"panel-body\">";
@@ -140,7 +140,7 @@ var MapElections;
             html += '</span>';
             return html;
         };
-        InfoWindow.prototype.setContent = function (html) {
+        InfoWindow.setContent = function (html) {
             document.getElementById('panel').innerHTML = html;
         };
         return InfoWindow;

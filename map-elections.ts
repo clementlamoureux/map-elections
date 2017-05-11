@@ -3,6 +3,9 @@ namespace MapElections {
     declare let google;
     declare let RichMarker;
     declare let RichMarkerPosition;
+    declare let document;
+    declare let window;
+    declare let XMLHttpRequest;
     let labels: Array<string> = [
         "Nombre d'inscrits",
         "Nombre de votants",
@@ -118,7 +121,7 @@ namespace MapElections {
             }
             setTimeout(() => document.getElementById('panel').className += "opened", 300);
             me.opened = true;
-            this.setContent(me.getTemplate(data));
+            InfoWindow.setContent(me.getTemplate(data));
         }
         getTemplate(data: any): string{
             let html = `<span class="panel-content"><span class="panel-header">${data.city}, ${data.country}</span><span class="panel-body">`;
@@ -141,7 +144,7 @@ namespace MapElections {
             html += '</span>';
             return html;
         }
-        setContent(html: string){
+        static setContent(html: string){
             document.getElementById('panel').innerHTML = html;
         }
     }

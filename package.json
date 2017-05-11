@@ -2,7 +2,7 @@
   "name": "map-elections",
   "version": "1.0.0",
   "description": "Map of the French elections's vote for abroad electors",
-  "main": "main.js",
+  "main": "map-elections.js",
   "devDependencies": {
     "@types/node": "^7.0.18",
     "@types/sinon": "^2.2.1",
@@ -23,6 +23,6 @@
     "test": "tsc -v && tsc test/unit-test.ts --target es5 --experimentalDecorators && ava test/unit-test.js",
     "start": "gulp serve"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Clément Lamoureux",
+  "license": "MIT"
 }
